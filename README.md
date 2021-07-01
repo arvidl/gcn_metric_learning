@@ -40,6 +40,23 @@ The implementaton of the global loss function is based on:
    cd gcn_metric_learning
    ```
 
+Added:
+```
+conda create -n gcn-metric-learning python=3.6 ipython -y && conda activate gcn-metric-learning
+```
+and to the `requirements.txt` for the MacOS:
+
+```
+#https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.10.0-cp34-cp34m-linux_x86_64.whl
+#https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow-0.10.0-cp34-cp34m-linux_x86_64.whl
+https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.10.0-py3-none-any.whl
+```
+then:
+
+```shell
+conda activate gcn-metric-learning
+```
+
 2. Install the dependencies. Please edit `requirements.txt` to choose the
    TensorFlow version (CPU / GPU, Linux / Mac) you want to install, or install
    it beforehand.
@@ -53,7 +70,7 @@ To use our siamese graph ConvNet on your data, you need:
 
 1. pairs of graphs as matrices where each row is a node and each column is a node feature,
 2. a class label for each graph,
-3. an adjacency matrix which provides the structure as a graph; the same structure 
+3. an adjacency matrix which provides the structure as a graph; the same structure
    will be used for all samples.
 
 Please get in touch if you are unsure about applying the model to a different
