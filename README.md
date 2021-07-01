@@ -13,11 +13,17 @@ presented in our papers:
   and Computer-Assisted Interventions (MICCAI), 2017.
 
 <p align="center">
-<img src="http://www.doc.ic.ac.uk/~sk1712/graph_construction.png" alt="overview" width="800"/>
+<img src="refs/Fig1a.png" alt="overview" width="800"/>
 </p>
+
+(a) Estimation of single subject connectivity matrix and labelled graph representation. Pear- son’s correlation is used to obtain a functional connectivity matrix from the raw fMRI time- series. After specifying the graph structure for all subjects, based on spatial or functional information, each row/column of the connectivity matrix serves as a signal for the correspond- ing node (node label).
+
 <p align="center">
-<img src="http://www.doc.ic.ac.uk/~sk1712/overview_metric_learning.png" alt="overview" width="800"/>
+<img src="refs/Fig1b.png" alt="overview" width="800"/>
 </p>
+
+(b) Siamese graph convolutional neural network for metric learning. A pair of graphs with the same structure but different signals is fed to this network, which outputs a similarity estimate between the two graphs. A same class (matching) / different class (non-matching) binary label is used for each pair during training.
+
 
 The code is released under the terms of the [MIT license](LICENSE.txt). Please
 cite the above paper if you use it.
